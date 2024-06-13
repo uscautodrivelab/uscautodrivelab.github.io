@@ -1,13 +1,17 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+}
+
 html {
   height: 100%;
+  font-family: 'Merriweather', serif;
 }
 
 body {
   margin: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Merriweather', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
@@ -19,20 +23,15 @@ div#root {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-@font-face {
-  font-family: lato;
-  src: url(assets/Lato-Regular.ttf);
-}
-
-@font-face {
-  font-family: comfortaa;
-  src: url(assets/Comfortaa-VariableFont_wght.ttf);
+a:hover {
+  text-decoration: underline;
 }
