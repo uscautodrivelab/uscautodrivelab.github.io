@@ -4,6 +4,8 @@ Welcome to behind the scenes of
 [uscautodrivelab.github.io](https://uscautodrivelab.github.io)! This website is
 built with [React](https://reactjs.org/) and [MUI](https://mui.com/).
 
+_Note: This website is a work in progress. The content is not final._
+
 | Type                          | Name                                                               | Related Folder(s) / File(s)                                        | Description                                                                             |
 | ----------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | Package Manager               | [pnpm](https://pnpm.io/)                                           | [package.json](package.json) <br> [pnpm-lock.yaml](pnpm-lock.yaml) | Package manager that facilitates efficient management and installation of dependencies. |

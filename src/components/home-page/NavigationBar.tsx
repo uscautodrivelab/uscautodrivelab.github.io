@@ -11,12 +11,16 @@ import {
   List,
   ListItem,
   ListItemText,
+  ListItemIcon,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import EmailIcon from '@mui/icons-material/Email';
+import BiotechIcon from '@mui/icons-material/Biotech';
 import usc_logo from '../../assets/usc_logo.png';
 
 export const NavigationBar: React.FC = () => {
-  const pages = ['Research Digest', '[Blank]', '[Blank]'];
+  const pages = ['Research Digest', '[Blank]', '[Blank]', 'Contact Us'];
+  const pageIcons = [<BiotechIcon />, null, null, <EmailIcon />];
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
   const toggleDrawer =
@@ -42,8 +46,13 @@ export const NavigationBar: React.FC = () => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {pages.map(text => (
+        {pages.map((text, index) => (
           <ListItem button key={text} onClick={handleClick}>
+            {pageIcons[index] && (
+              <ListItemIcon sx={{ minWidth: 'auto', marginRight: '8px' }}>
+                {pageIcons[index]}
+              </ListItemIcon>
+            )}
             <ListItemText primary={text} />
           </ListItem>
         ))}
