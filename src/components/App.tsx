@@ -1,7 +1,6 @@
 import React from 'react';
-import { ResponsiveBox } from './lib/ResponsiveBox';
-import { NavigationBar } from './navigation-bar/NavigationBar';
 import { ThemeProvider, createTheme } from '@mui/material';
+import { HomePage } from './home-page/HomePage';
 
 export const App: React.FC = ({}) => {
   const theme = createTheme({
@@ -17,9 +16,7 @@ export const App: React.FC = ({}) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <ResponsiveBox>
-        <NavigationBar />
-      </ResponsiveBox>
+      <HomePage />
     </ThemeProvider>
   );
 };

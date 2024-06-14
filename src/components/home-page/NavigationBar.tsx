@@ -105,3 +105,6 @@ export const NavigationBar: React.FC = () => {
     </AppBar>
   );
 };
+
+// ToDo:
+// add routing for menu pages and homepage
